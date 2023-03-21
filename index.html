@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW</title>
+</head>
+
+<body id="bColor" style="background-color: white;">
+    <input id="numb">
+    <button onclick="submit()">Submit</button>
+    <script>
+        function submit() {
+            if (numb.value < 10) { // <10
+                console.log(numb.value)
+            } else {
+                if (numb.value >10 && numb.value <21 ) { // 11-20
+                    console.log(numb.value);
+                    console.log(numb.value);
+                } else {
+                    if (numb.value < 31  &&  numb.value > 20) { // 20-30
+                        console.log("Asaf");
+                    } else {
+                        if (numb.value < 41  &&  numb.value > 30) { //30-40
+                            console.log(numb.value*4);
+                        } else {
+                            if (numb.value < 51 && numb.value >= 41) { //41-50
+                                console.log(parseInt(numb.value)+200);
+                            } 
+                            
+                            
+
+
+                            
+
+
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <br><br><br><br>
+    
+        <input id="secondo">
+        <button onclick="color(secondo.value)">Color</button>
+        <script>
+            const bb = document.getElementById('bColor')
+            function color(iNum) {
+                if (secondo.value == 2) { bb.style.backgroundColor = 'red' }
+                else if (secondo.value == 3) { bb.style.backgroundColor = 'green'}
+                else if (secondo.value == 4) { bb.style.backgroundColor = 'blue'}
+                else { bb.style.backgroundColor = 'darkorchid'}
+            }
+
+
+        </script>
+    
+</body>
+
+</html>
